@@ -17,5 +17,5 @@ prompt.get('input', function (err, result) {
         }
     }
 
-    twoCount>fiveCount ? console.log('2') : console.log('5');
+    twoCount>fiveCount ? console.log('2') : twoCount<fiveCount ? console.log('5') : console.log('=');;
 });
