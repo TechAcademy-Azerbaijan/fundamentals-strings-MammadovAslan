@@ -12,6 +12,9 @@ prompt.get('input', function (err, result) {
             console.log(str.indexOf(str[i]));
             console.log(str.lastIndexOf(str[i]));
             break
+        }else{
+            console.log(-1);
+            break
         }
     }
 });
