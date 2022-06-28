@@ -25,7 +25,7 @@ prompt.get('input', function (err, result) {
         console.log(firstInd);
         console.log(lastInd);
     }else{
-        console.log(-1);
+        console.log(str.indexOf(' '));
     }            
 });
 
