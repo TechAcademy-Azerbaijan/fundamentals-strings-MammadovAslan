@@ -4,17 +4,21 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    let str = result.input
-    //kpkkp
-    str = str.split('')
+    let str = result.input.split('')
+    let max = 0
+    let count = 0
 
     for(let i = 0;i<str.length;i++){
-        let counter = 1
-        if(str[i] == str[i+1]){
-            counter++
+        if(str[i] === 'k'){
+            count++
+            if(count>max){
+                max = count
+            }
+        }else{
+            count = 0
         }
     }
 
-    console.log(counter);
+console.log(max);
   
 });
