@@ -4,6 +4,9 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    // Write code here
-  
+    let str = result.input
+    //introduction to algorithms
+    str[0] = str[0].toUpperCase()
+    console.log(str);
+ 
 });
